@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        .box:hover {
+            color: red;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        /* 伪类-超链接共有四个状态 */
+        /* :link 访问前 */
+        /* :visited 访问后 */
+        /* :hover 鼠标悬停 */
+        /* :active 点击时（激活）*/
+        /* 若要给超链接设置以上四个状态，需要按 LVHA 的顺序书写 */
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">div标签的伪类选择器</div>
+    <a href="#">a标签，测试 伪类</a>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 复合选择器 */
+        /* 后代选择器 （会选中所有后代：儿子孙子...）*/
+        /* 写法：父选择器+ +子选择器 */
+        div span{
+            color: red;
+        }
+        /* 子代选择器（只选中儿子） */
+        /* 写法：父选择器 > 子 */
+        div > span{
+            color: orange;
+        }
+        /* 并级选择器：选中多组标签设置相同的形式 */
+        /* 选择器1，选择器2，... */
+        p,h2{
+            color: blue;
+        }
+        /* 交集选择器（选中满足多个条件的元素） */
+        p.box{
+            color: aqua;
+        } 
+    </style>
+</head>
+<body>
+    <span>这是普通的span</span>
+    <div>
+        <span>这是 div 的儿子</span>
+        <p>
+            <span>这是孙子span</span>
+        </p>
+    </div>
+    <p>并集选择器</p>
+    <h2>并集</h2>
+
+    <p class="box">交集选择器1</p>
+    <p>交集2</p>
+    <div class="box">交集3</div>
+</body>
+</html>

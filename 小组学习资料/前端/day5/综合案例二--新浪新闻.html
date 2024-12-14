@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪新闻列表</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news{
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+            /* background-color: pink; */
+        }
+        .news .hd{
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left: 0;
+        }
+        .news .hd a {
+            /* margin = -1 表示盒子向上移动 */
+            margin-top: -1px;
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+
+            /* 行内元素加宽高不生效，故需修改 */
+            display: block;
+
+            text-align: center;
+            line-height: 32px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .news .bd li {
+            background-image: url(./image111.png);
+            background-size: 8px 8px;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+
+            padding-left: 15px;
+        }
+
+        .news .bd li a {
+            background: url(./image.png) no-repeat 0 center;
+            background-size: 8px;
+            padding-left: 15px;
+
+            font-size: 12px;
+            color: #666;
+
+            line-height: 24px;
+        }
+        .news .bd li a:hover{
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <!-- 新闻区域 包含标题+内容-->
+     <div class="news">
+        <div class="hd"><a href="#">新闻</a></div>
+        <div class="bd">
+            <ul>
+                <li><a href="#">是一定就是打开拉萨解放</a></li>
+                <li><a href="#">是一定就是打开拉萨解放了机</a></li>
+                <li><a href="#">是一定就是打开拉萨</a></li>
+                <li><a href="#">是了机械能从拉萨的</a></li>
+                <li><a href="#">是一定就是打开拉萨解放了机的</a></li>
+                <li><a href="#">拉萨解放拉萨的</a></li>
+                <li><a href="#">是一定就是打开拉萨解放了机的</a></li>
+            </ul>
+        </div>
+     </div>
+</body>
+</html>

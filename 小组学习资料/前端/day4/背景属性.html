@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+    <style>
+        p{
+            width: 1000px;
+            height: 500px;
+            background-color: pink;
+            /* 默认是平铺的效果（复制） */
+            background-image: url(../基础/bqb.JPG);
+            /* 不平铺 */
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+
+            /* 背景图位置 */
+            /* background-position: 0 0; */
+            /* background-position: right bottom; */
+            /* background-position: 50px 0; */
+            /* 右,下为正 */
+            background-position: -50px 0;
+            /* 关键字取值写法可以颠倒顺序 */
+            /* background-position: bottom left; */
+            background-position: left bottom;
+            /* 关键字只写一个,则另一个方向默认居中 */
+            /* 数字只写一个表示水平方向,另一个方向默认居中 */
+
+            /* 背景图缩放 */
+            background-size: cover;
+            /* background-size: 80%; */
+            
+        }
+        div{
+            width: 800px;
+            height: 800px;
+
+            background: pink url(../列表，表格，表单/1.png) no-repeat center bottom/contain ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景图 -->
+    <!-- background-image(bgi)  属性值：url（背景图URL）-->
+    <p>标签背景测试</p>
+    <!-- 背景图平铺方式 -->
+    <!-- backgroud-repeat(bgr) -->
+    <!-- no-repeat repeat(默认) repeat-x repeat-y -->
+    
+    <!-- 背景图位置 -->
+    <!-- backgroud-position(bgp) -->
+    <!-- 关键字：left right center top bottom -->
+    <!-- 坐标：数字+px，正负均可 -->
+
+    <!-- 背景图缩放(设置背景图大小) -->
+    <!-- background-size(bgz) -->
+    <!-- 关键字:cover contain 均为等比例缩放,前者为完全覆盖背景区,后者为完全装入背景区
+    即分别可能为背景图片部分看不见 和 背景区部分空白-->
+    <!-- 百分比 -->
+    <!-- 数字+单位 -->
+
+    <!-- 背景图固定 -->
+    <!-- backgroud-attachment(bga) 
+     属性值:fixed 固定-->
+
+
+     <!-- 背景复合属性 -->
+      <!-- background（bg） -->
+
+    <!-- 背景色 背景图 背景图平铺方式 背景图位置/背景图缩放 背景图固定  -->
+    
+    <!-- 空格隔开各个属性值 不区分顺序 -->
+    
+     <div>背景属性复合写法测试</div>
+</body>
+</html>

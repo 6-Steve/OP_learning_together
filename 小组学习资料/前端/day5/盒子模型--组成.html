@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型--组成</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* 内边距:在盒子上下左右四个方向添加内边距 */
+            /* (内容与盒子边缘之间的距离) */
+            padding: 20px;
+            
+            padding-left: 60px;
+
+            /* padding多值写法 */
+            /* 依次上右下左 */
+            /* 或者上 左右 下 */
+
+            
+            /* 实线 虚线 点线 */
+            border: 3px dashed red;
+
+            /* 外边距 */
+            margin: 50px;
+
+
+            /* 边框线(上下左右分别设置) */
+
+            border-top: 10px solid orange;
+            border-left: 3px dashed green;
+            border-right: 3px dashed green;
+            border-bottom: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子模型重要组成部分 -->
+    <!-- 内容区域--width & height -->
+    <!-- 内边距--padding(出现在内容和盒子边缘之间) -->
+    <!-- 边框线--border -->
+    <!-- 外边距--margin(出现在盒子外面) -->
+    <div>div标签</div>
+</body>
+</html>

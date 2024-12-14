@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 写法： */
+        /* E:first-child */
+        /* E:last-child */
+        /* E:nth-child() 括号中填入数字或公式*/
+        li:first-child{
+            background-color: green;
+        }
+        li:last-child{
+            background-color: red;
+        }
+        li:nth-child(3){
+            background-color: yellow;
+        }
+        /* n从零开始 */
+        li:nth-child(n+5){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+        <li>li 6</li>
+        <li>li 7</li>
+        <li>li 8</li>
+        <li>li 9</li>
+    </ul>
+</body>
+</html>

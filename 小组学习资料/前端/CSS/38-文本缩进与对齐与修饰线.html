@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本缩进与对齐</title>
+    <style>
+        /* 文本缩进  text-indent */
+        /*属性值: 数字+px   or   数字+em(1em=当前标签的字号大小)*/
+        p{
+            text-indent: 2em;
+            font-size: 30px;
+        }
+        /* 文本对齐  text-align */
+        /* left center right */
+        /* 本质：居中的是文字内容，不是标签 */
+        h1{
+            text-align: center;
+        }
+        /* 图片居中 */
+        div{
+            text-align: center;
+        }
+        /* 修饰线 */
+        /* text-decoration */
+        /* none underline line-through overline */
+        .aa{
+            text-decoration: none;
+        }
+        .divv{
+            text-decoration: underline;
+        }
+        .pp{
+            text-decoration: line-through;
+        }
+        .spann{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <p>专注端侧模型的面壁智能CEO李大海此前在接受包括《每日经济新闻》在内的记者采访时就谈到，
+        相同智能水平的模型，每8个月其参数规模将减少一半，
+        这与摩尔定律具有一定的相似性。在同等性能下，参数规模减小，
+        说明大模型的知识密度在不断提高。李大海表示，随着大模型知识密度的提升和端侧算力的增强，
+        两个因素叠加，有信心在2026年年底前研发出达到GPT-4水平的端侧模型，
+        当端侧模型能够实现GPT-4水平时，很多端侧的产品会更快落地。</p>
+    <h1>文本对齐测试</h1>
+    <div>
+        <img src="../基础/pic.JPG" alt="图片加载中" height="50">
+    </div>
+    <a href="#" class="aa">a标签，去除下划线</a>
+    <div class="divv">div标签，添加下划线</div>
+    <p class="pp">p标签，添加删除线</p>
+    <span class="spann">span标签，添加上划线</span>
+    
+</body>
+</html>

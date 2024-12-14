@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型--圆角</title>
+    <style>
+        /* 盒子圆角 */
+        div{
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* border-radius: 20px; */
+            /* 属性值为 圆角半径 */
+            /* 圆角赋多值时，从左上角顺时针赋值，没有取值的角和对角的取值相同 */
+            border-radius: 10px 20px 30px 40px;
+
+        }
+        .yuan{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            border-radius: 50%;
+        }
+        .jiaonang{
+            width: 200px;
+            height: 100px;
+            background-color: greenyellow;
+            
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>盒子圆角</div>
+    <div class="yuan"></div>
+    <div class="jiaonang"></div>
+</body>
+</html>
