@@ -1,0 +1,4 @@
+model_checkpoint_path: "E:/classify/cats_vs_dogs-main/cats_vs_dogs/log/model.ckpt-9999"
+all_model_checkpoint_paths: "E:/classify/cats_vs_dogs-main/cats_vs_dogs/log/model.ckpt-0"
+all_model_checkpoint_paths: "E:/classify/cats_vs_dogs-main/cats_vs_dogs/log/model.ckpt-5000"
+all_model_checkpoint_paths: "E:/classify/cats_vs_dogs-main/cats_vs_dogs/log/model.ckpt-9999"
